@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>
+      Nesting rules
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Nesting rules
+      </h1>
+    </header>
+      <p>
+        Html tag should be nested  in a proper order. So, if we wants have a nice code ,we have to the <mark>nesting</mark> rules.
+      </p>
+    <main>
+      <section>
+        <h2>
+          End the element inside the parent element before closing the parent element.
+        </h2>
+          <p>
+          <mark>Don't do this</mark><br>
+          &lt;p&gt; there is a &lt;b&gt; big problem in this code. &lt;/p&gt; <br>
+          There is an error in this example.
+          </p>
+          <p>
+          <mark>Do this instead</mark><br>
+          &lt;p&gt; there is a &lt;b&gt;big&lt;b&gt; problem in this code &lt;/p&gt;.<br>
+          We need to close the &lt;b&gt; tag before ending the &lt;p&gt;.<br>
+          </p>
+        </section>
+        <section>
+          <h2>
+            Nest element properly
+          </h2>
+          <p>
+            <mark>Don't do this</mark><br>
+            <code>.....&lt;head&gt;</code><br>
+            <code>.....&lt;title&gt;</code><br>
+            <code>.....Nesting rules</code><br>
+            <code>.....&lt;/title&gt;</code><br>
+            <code>.....&lt;/head&gt;</code>
+          </p>
+          <p>
+            <mark>Do this instead</mark><br>
+            <code>.....&lt;head&gt;</code><br>
+            <code>.......&lt;title&gt;</code><br>
+            <code>.........Nesting rules</code><br>
+            <code>.......&lt;/title&gt;</code><br>
+            <code>.....&lt;/head&gt;</code><br>
+          </p>
+        </section>
+      <footer>
+        <a href="rules.html">
+          Go back to the rules 
+        </a>
+      </footer> 
+    </main>
+  </body>
+</html>
